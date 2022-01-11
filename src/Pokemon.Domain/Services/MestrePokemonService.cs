@@ -1,9 +1,6 @@
 ﻿using Pokemon.Domain.Interfaces;
 using Pokemon.Domain.ValueObjects;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Pokemon.Domain.Services
@@ -22,7 +19,7 @@ namespace Pokemon.Domain.Services
             _mestrePokemonRepository?.Dispose();
             GC.SuppressFinalize(this);
         }
-        public async Task<MestrePokemon> AdicionarMestrePokemon(string cpfNumero, string nome)
+        public async Task<MestrePokemon> AdicionarMestrePokemon(string cpfNumero, string nome, int idade)
         {
             MestrePokemon mestrePokemon;
 
@@ -30,7 +27,7 @@ namespace Pokemon.Domain.Services
 
             if(mestrePokemon == null)
             {
-                mestrePokemon = new MestrePokemon(cpfNumero, nome);
+                mestrePokemon = new MestrePokemon(cpfNumero, nome, idade);
 
                 await _mestrePokemonRepository.Adicionar(mestrePokemon);
             }

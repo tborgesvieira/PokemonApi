@@ -31,7 +31,7 @@ namespace Pokemon.Domain.ValueObjects
         {
             cpf = cpf.ApenasNumeros();
 
-            if (cpf.Length > 11)
+            if (cpf == null || cpf.Length > 11)
                 return false;
 
             while (cpf.Length != 11)

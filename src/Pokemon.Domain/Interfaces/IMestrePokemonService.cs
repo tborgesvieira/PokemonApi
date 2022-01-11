@@ -5,6 +5,6 @@ namespace Pokemon.Domain.Interfaces
 {
     public interface IMestrePokemonService : IDisposable
     {
-        Task<MestrePokemon> AdicionarMestrePokemon(string cpfNumero, string nome);
+        Task<MestrePokemon> AdicionarMestrePokemon(string cpfNumero, string nome, int idade);
     }
 }

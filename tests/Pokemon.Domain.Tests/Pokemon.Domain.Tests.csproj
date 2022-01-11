@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\DomainFixture.cs" />
+    <Compile Include="Domain\MestrePokemonTests.cs" />
     <Compile Include="Helpers\ConversorTests.cs" />
     <Compile Include="Helpers\StringUtilsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
