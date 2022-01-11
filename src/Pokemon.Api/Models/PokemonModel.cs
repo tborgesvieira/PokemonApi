@@ -22,7 +22,7 @@ namespace Pokemon.Api.Models
 
             get
             {
-                return Conversor.EncodeToBase64(_sprite);
+                return _sprite.EncodeToBase64();
             }
         }
         public List<string> Evolucoes { get; set; }

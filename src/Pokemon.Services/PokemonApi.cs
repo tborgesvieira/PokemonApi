@@ -148,7 +148,7 @@ namespace Pokemon.Services
             {
                 var id = random.Next(1, results.Count());
 
-                var pkResult = results[id];
+                var pkResult = results[id-1];
 
                 if (!pokemonsResult.Contains(pkResult))
                 {

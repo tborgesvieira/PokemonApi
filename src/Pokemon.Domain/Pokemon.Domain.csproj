@@ -42,7 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\Conversor.cs" />
+    <Compile Include="Helpers\StringUtils.cs" />
+    <Compile Include="Interfaces\IMestrePokemonRepository.cs" />
+    <Compile Include="Interfaces\IMestrePokemonService.cs" />
+    <Compile Include="MestrePokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MestrePokemonService.cs" />
+    <Compile Include="ValueObjects\Cpf.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

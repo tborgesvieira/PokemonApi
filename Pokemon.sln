@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{F9F1F5B4-079E-4512-9971-0DEFEF5D5247}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Services.Tests", "tests\Pokemon.Services.Tests\Pokemon.Services.Tests.csproj", "{F94DAB2F-FC6E-4A66-9F0E-8F9165DB3A3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.CrossCurring.IoC", "src\Pokemon.CrossCurring.IoC\Pokemon.CrossCurring.IoC.csproj", "{EA5E9770-73D8-4F2B-B879-DDC63AAF7662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Domain.Tests", "tests\Pokemon.Domain.Tests\Pokemon.Domain.Tests.csproj", "{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EA5E9770-73D8-4F2B-B879-DDC63AAF7662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5E9770-73D8-4F2B-B879-DDC63AAF7662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5E9770-73D8-4F2B-B879-DDC63AAF7662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{D4BA3F34-7D14-4C56-AE24-909979DC3289} = {3C185F93-BE0E-4A40-91B2-6164FB3FEF00}
 		{F94DAB2F-FC6E-4A66-9F0E-8F9165DB3A3D} = {3C185F93-BE0E-4A40-91B2-6164FB3FEF00}
 		{EA5E9770-73D8-4F2B-B879-DDC63AAF7662} = {8A12AD8A-AEB6-4208-ACDC-4ED838618B9F}
+		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98} = {8D150597-9278-4827-877E-F33CB66CDBA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E86408F-5598-4024-AD47-6FC01189576B}
