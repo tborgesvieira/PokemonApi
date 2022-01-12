@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.CrossCurring.IoC", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Domain.Tests", "tests\Pokemon.Domain.Tests\Pokemon.Domain.Tests.csproj", "{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Data", "src\Pokemon.Data\Pokemon.Data.csproj", "{2590708B-F475-48A7-B6AB-3ECD55CC3328}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2590708B-F475-48A7-B6AB-3ECD55CC3328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2590708B-F475-48A7-B6AB-3ECD55CC3328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2590708B-F475-48A7-B6AB-3ECD55CC3328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2590708B-F475-48A7-B6AB-3ECD55CC3328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{F94DAB2F-FC6E-4A66-9F0E-8F9165DB3A3D} = {3C185F93-BE0E-4A40-91B2-6164FB3FEF00}
 		{EA5E9770-73D8-4F2B-B879-DDC63AAF7662} = {8A12AD8A-AEB6-4208-ACDC-4ED838618B9F}
 		{7CF3CACE-6FA0-41BA-8F59-D47A85280A98} = {8D150597-9278-4827-877E-F33CB66CDBA7}
+		{2590708B-F475-48A7-B6AB-3ECD55CC3328} = {FBFEFE6E-62A7-4472-A9E0-5F3BA9B0DCFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E86408F-5598-4024-AD47-6FC01189576B}

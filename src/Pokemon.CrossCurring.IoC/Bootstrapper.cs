@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
+using Pokemon.Data;
+using Pokemon.Data.Context;
+using Pokemon.Domain.Interfaces;
+using Pokemon.Domain.Services;
 using Pokemon.Services;
 using Pokemon.Services.Services.Interfaces;
 using SimpleInjector;
 using SimpleInjector.Lifestyles;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pokemon.CrossCurring.IoC
 {
@@ -23,6 +23,12 @@ namespace Pokemon.CrossCurring.IoC
             container.Register<IApiService, ApiService>(Lifestyle.Scoped);
 
             container.Register<IPokemonApi, PokemonApi>(Lifestyle.Scoped);
+
+            container.Register<IMestrePokemonService, MestrePokemonService>(Lifestyle.Scoped);
+
+            container.Register<IMestrePokemonRepository, MestrePokemonRepository>(Lifestyle.Scoped);
+
+            container.Register<PokemonContext>(Lifestyle.Scoped);
         }
 
         public static void RegisterAutoMapper(this Container container, IEnumerable<Profile> profiles)

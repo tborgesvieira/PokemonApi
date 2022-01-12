@@ -9,11 +9,26 @@ namespace Pokemon.Domain
 
         public Guid Id { get; private set; }
         public Cpf Cpf { get; private set; }
+        public string CpfLimpo
+        {
+            get
+            {
+               return Cpf.CpfLimpo;
+            }
+            set
+            {
+                Cpf = new Cpf(value);
+            }
+        }
         public string Nome { get; private set; }
         public int Idade { get; private set; }
 
+        protected MestrePokemon(){}
+
         public MestrePokemon(string cpfNumero, string nome, int idade)
         {            
+            Id = Guid.NewGuid();
+
             var cpf = new Cpf(cpfNumero);
 
             Cpf = cpf;
