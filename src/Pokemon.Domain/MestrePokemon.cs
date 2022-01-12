@@ -1,5 +1,6 @@
 ﻿using Pokemon.Domain.ValueObjects;
 using System;
+using System.Collections.Generic;
 
 namespace Pokemon.Domain
 {

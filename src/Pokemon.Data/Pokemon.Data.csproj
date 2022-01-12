@@ -65,7 +65,9 @@
   <ItemGroup>
     <Compile Include="Context\PokemonContext.cs" />
     <Compile Include="Mapping\MestrePokemonMapping.cs" />
+    <Compile Include="Mapping\PokedexMapping.cs" />
     <Compile Include="MestrePokemonRepository.cs" />
+    <Compile Include="PokedexRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

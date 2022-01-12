@@ -28,6 +28,8 @@ namespace Pokemon.CrossCurring.IoC
 
             container.Register<IMestrePokemonRepository, MestrePokemonRepository>(Lifestyle.Scoped);
 
+            container.Register<IPokedexRepository, PokedexRepository>(Lifestyle.Scoped);
+
             container.Register<PokemonContext>(Lifestyle.Scoped);
         }
 

@@ -35,15 +35,7 @@ namespace Pokemon.Data
 
         public async Task<MestrePokemon> ObterPorCpf(Cpf cpf)
         {
-            try
-            {
-                var pk = _pokemonContext.MestresPokemons.FirstOrDefault(c => c.CpfLimpo.Equals(cpf.CpfLimpo));
-
-                return pk;
-            }catch (Exception err)
-            {
-                return null;
-            }
+            return await _pokemonContext.MestresPokemons.FirstOrDefaultAsync(c => c.CpfLimpo.Equals(cpf.CpfLimpo));
         }
     }
 }
